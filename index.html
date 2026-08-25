@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TED Capital Holding Group</title>
+<meta name="description" content="TED Capital Holding Group — a cross-border fintech-driven holding group empowering seamless global business connectivity and growth." />
+<link rel="stylesheet" href="ted-capital/style.css" />
+</head>
+<body class="page-home lang-en">
+
+<nav>
+  <div class="nav-in">
+    <a href="index.html" class="brand">
+      <img src="ted-capital/logo.png" alt="TED CAPITAL HOLDING GROUP" />
+    </a>
+    <div class="nav-links">
+      <a href="ted-capital/about.html"><span data-lang="en">About</span><span data-lang="zh">公司概况</span></a>
+      <a href="ted-capital/advantages.html"><span data-lang="en">Advantages</span><span data-lang="zh">核心优势</span></a>
+      <a href="ted-capital/sectors.html"><span data-lang="en">Sectors</span><span data-lang="zh">投资板块</span></a>
+      <a href="ted-capital/operations.html"><span data-lang="en">Global Ops</span><span data-lang="zh">全球业务</span></a>
+      <a href="ted-capital/contact.html"><span data-lang="en">Contact</span><span data-lang="zh">联系我们</span></a>
+      <button class="lang-btn" id="langBtn" aria-label="Toggle language">EN / 中</button>
+    </div>
+    <button class="mobile-menu" id="menuBtn">☰</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content wrap">
+    <div class="hero-kicker" data-lang="en">Leading Fintech Pioneer</div>
+    <div class="hero-kicker" data-lang="zh">领先的金融科技先锋</div>
+    <h1>
+      <span data-lang="en">Empowering Seamless Global Business Connectivity and Growth</span>
+      <span data-lang="zh">赋能全球商业无缝连接与增长</span>
+      <span class="en">TED CAPITAL HOLDING GROUP</span>
+    </h1>
+    <p data-lang="en">Driven by cutting-edge technology · Guarded by the highest security standards.</p>
+    <p data-lang="zh">以前沿科技驱动 · 以最高安全标准护航。</p>
+    <a href="ted-capital/about.html" class="btn btn-primary">
+      <span data-lang="en">Explore →</span>
+      <span data-lang="zh">了解更多 →</span>
+    </a>
+  </div>
+  <div class="hero-foot">
+    <div class="wrap">
+      <span data-lang="en">© 2026 TED Capital Holding Group</span>
+      <span data-lang="zh">© 2026 泰德资本控股集团</span>
+      <span data-lang="en">Brand showcase only</span>
+      <span data-lang="zh">品牌展示用途</span>
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn=document.getElementById('langBtn');
+  const body=document.body;
+  function toggle(){body.classList.toggle('lang-en');body.classList.toggle('lang-zh');localStorage.setItem('ted-lang',body.classList.contains('lang-en')?'en':'zh');}
+  btn.addEventListener('click',toggle);
+  const saved=localStorage.getItem('ted-lang');
+  if(saved==='zh'){body.classList.remove('lang-en');body.classList.add('lang-zh');}
+</script>
+</body>
+</html>
