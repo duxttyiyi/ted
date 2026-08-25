@@ -74,6 +74,9 @@
   const body=document.body;
   function toggle(){body.classList.toggle('lang-en');body.classList.toggle('lang-zh');localStorage.setItem('ted-lang',body.classList.contains('lang-en')?'en':'zh');}
   btn.addEventListener('click',toggle);
+  const menuBtn=document.getElementById('menuBtn');
+  const navLinks=document.querySelector('.nav-links');
+  menuBtn.addEventListener('click',function(){navLinks.classList.toggle('open');});
   const saved=localStorage.getItem('ted-lang');
   if(saved==='zh'){body.classList.remove('lang-en');body.classList.add('lang-zh');}
 </script>
