@@ -37,9 +37,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:.3s}
   box-shadow:0 4px 14px rgba(212,168,75,.35)}
 .brand b{font-size:17px}
 .brand span{font-size:11px;letter-spacing:2px;display:block;font-weight:600;opacity:.75}
-.brand img{height:96px;width:auto;display:block}
+.brand img{height:86px;width:auto;display:block}
 .nav-links{display:flex;align-items:center;gap:28px;font-size:14px}
-@media(max-width:720px){.brand img{height:84px}}
+@media(max-width:720px){.brand img{height:68px}}
 .nav-links a{position:relative;transition:.25s;opacity:.9}
 .nav-links a:hover{opacity:1;color:var(--gold)}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--gold);transition:.25s}
