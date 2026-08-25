@@ -39,7 +39,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:.3s}
 .brand span{font-size:11px;letter-spacing:2px;display:block;font-weight:600;opacity:.75}
 .brand img{height:120px;width:auto;display:block}
 .nav-links{display:flex;align-items:center;gap:28px;font-size:14px}
-@media(max-width:720px){.brand img{height:90px}}
+@media(max-width:720px){.brand img{height:104px}}
 .nav-links a{position:relative;transition:.25s;opacity:.9}
 .nav-links a:hover{opacity:1;color:var(--gold)}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--gold);transition:.25s}
@@ -129,12 +129,12 @@ section{padding:70px 0}
   .hero-kicker{font-size:11px;padding:5px 14px}
   .hero-foot .wrap{flex-wrap:wrap;gap:4px;justify-content:center;text-align:center}
   /* Mobile: scale background by width + blur so the image (and its text) never distracts */
-  .hero::before{background-size:contain;background-position:center 200px;filter:blur(6px);transform:scale(1.06)}
+  .hero::before{background-size:contain;background-position:top center;transform:scale(1.06)}
   .hero-overlay{background:linear-gradient(180deg,rgba(0,0,0,.12) 0%,rgba(0,0,0,.06) 35%,rgba(0,0,0,.72) 62%,rgba(0,0,0,.90) 100%)}
   .stats{grid-template-columns:1fr}
 }
 @media(max-width:480px){
-  .hero::before{background-position:center 200px}
+  .hero::before{background-position:top center}
   .hero-content{padding:104px 16px 30px}
   .hero h1{font-size:23px}
   .hero-slogan{font-size:13px}
